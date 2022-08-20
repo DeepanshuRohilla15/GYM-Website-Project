@@ -11,12 +11,17 @@
 <link rel="stylesheet" href="css/style.css">
 <style>
     /*CSS Reset*/
+    .background{
+        background: url('bg.jpg');
+        z-index: -1;
+        opacity: 0.98;
+    }
     body {
         font-family: 'Baloo Bhaijaan 2', cursive;
         color: white;
         margin: 0px;
         padding: 0px;
-        background: url('bg.jpg');
+        /* background: url('bg.jpg'); */
     }
 
     .left {
@@ -28,43 +33,51 @@
     }
 
     .mid {
-        display: block;
-        width: 36%;
-        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
     .right {
         position: absolute;
-        right: 34px;
-        top: 20px;
+        right: 15px;
+        top: 15px;
         display: inline-block;
 
     }
 
     .navbar {
         display: inline-block;
-    }
+    } 
 
     .navbar li {
         display: inline-block;
-        font-size: 15px;
+        /* font-size: 15px; */
     }
 
     .navbar li a {
-        color: white;
+        padding: 34px 44px;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
         text-decoration: none;
-        padding: 34px 23px;
     }
 
-    .navbar li a:hover,
-    .navbar li a.active {
+    .navbar li a:hover{
+        padding: 34px 44px;
+        font-size: 25px;
+        text-decoration: underline;
+        color: rgba(204, 238, 226, 0.945);
+    }
+
+    /* .navbar li a.active {
         text-decoration: underline;
         color: grey;
-    }
+    } */
 
     .left img {
         width: 136px;
+        filter: invert(100%);
     }
 
     .left div {
@@ -76,29 +89,32 @@
         margin: 0px 9px;
         background-color: black;
         color: white;
-        padding: 4px 14px;
+        padding: 1px 14px;
         border: 2px solid grey;
         border-radius: 10px;
-        font-size: 15px;
+        font-size: 20px;
         cursor: pointer;
     }
 
     .btn:hover {
-        background-color: rgb(107, 104, 104);
+        background-color: rgb(214, 190, 190);
+        color: rgb(18, 16, 16);
     }
 
     .container {
 
-        margin: 122px 88px;
-        padding: 125px 10px;
-        width: 54%;
+        margin: 116px 29px;
+        padding: 22px 10px;
+        width: 30%;
+        /* height: 91px; */
+        border: 3px solid white;
         border-radius: 10px;
     }
 
     .form-group input {
         text-align: center;
         display: block;
-        width: 508px;
+        width: 425px;
         padding: 3px;
         border: 2px solid black;
         margin: 11px auto;
@@ -117,11 +133,11 @@
     }
 </style>
 
-<body>
+<body class="background">
     <header class="header">
         <!-- logo-->
         <div class="left">
-            <img src="images.png" alt="">
+            <img src="logo.png" alt="">
             <div>Deepanshu Fitness</div>
         </div>
         <!--navbar-->
@@ -153,6 +169,12 @@
             </div>
             <div class="form-group">
                 <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your phone no.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your email id.">
             </div>
             <button class="btn">Submit</button>
         </form>
