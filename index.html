@@ -8,137 +8,17 @@
     <title>Deepanshu Fitness</title>
 </head>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<style>
-    /*CSS Reset*/
-    .background{
-        background: url('bg.jpg');
-        z-index: -1;
-        opacity: 0.98;
-    }
-    body {
-        font-family: 'Baloo Bhaijaan 2', cursive;
-        color: white;
-        margin: 0px;
-        padding: 0px;
-        /* background: url('bg.jpg'); */
-    }
-
-    .left {
-        position: absolute;
-        left: 34px;
-        top: 20px;
-        display: inline-block;
-
-    }
-
-    .mid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .right {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        display: inline-block;
-
-    }
-
-    .navbar {
-        display: inline-block;
-    } 
-
-    .navbar li {
-        display: inline-block;
-        /* font-size: 15px; */
-    }
-
-    .navbar li a {
-        padding: 34px 44px;
-        font-size: 25px;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-    }
-
-    .navbar li a:hover{
-        padding: 34px 44px;
-        font-size: 25px;
-        text-decoration: underline;
-        color: rgba(204, 238, 226, 0.945);
-    }
-
-    /* .navbar li a.active {
-        text-decoration: underline;
-        color: grey;
-    } */
-
-    .left img {
-        width: 136px;
-        filter: invert(100%);
-    }
-
-    .left div {
-        text-align: center;
-    }
-
-    .btn {
-        font-family: 'Baloo Bhaijaan 2', cursive;
-        margin: 0px 9px;
-        background-color: black;
-        color: white;
-        padding: 1px 14px;
-        border: 2px solid grey;
-        border-radius: 10px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    .btn:hover {
-        background-color: rgb(214, 190, 190);
-        color: rgb(18, 16, 16);
-    }
-
-    .container {
-
-        margin: 116px 29px;
-        padding: 22px 10px;
-        width: 30%;
-        /* height: 91px; */
-        border: 3px solid white;
-        border-radius: 10px;
-    }
-
-    .form-group input {
-        text-align: center;
-        display: block;
-        width: 425px;
-        padding: 3px;
-        border: 2px solid black;
-        margin: 11px auto;
-        font-size: 25px;
-        border-radius: 8px;
-    }
-
-    .container h1 {
-        text-align: center;
-    }
-
-    .container button {
-        display: block;
-        width: 23%;
-        margin: auto;
-    }
-</style>
+<link rel="stylesheet" href="./styles/main.css">
 
 <body class="background">
     <header class="header">
         <!-- logo-->
         <div class="left">
-            <img src="logo.png" alt="">
-            <div>Deepanshu Fitness</div>
+            <img class='logo' src="./assets/logos/images.png" alt="Deepanshu">
+            <div class="title">Deepanshu Fitness</div>
+        </div>
+        <div class="img-container">
+            <img class="hero-banner" src="/assets//images/bg.jpg">
         </div>
         <!--navbar-->
         <div class="mid">
@@ -176,7 +56,7 @@
             <div class="form-group">
                 <input type="text" name="" placeholder="Enter your email id.">
             </div>
-            <button class="btn">Submit</button>
+            <button class="submit-btn">Submit</button>
         </form>
     </div>
 </body>
